@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <div>
-        <nav className="navbar navbar-expand-lg bg-info">
+        <nav className="navbar navbar-expand-lg navbar-text col-md-12 col-sm-12 col-xs-12 text-bg-info p-3 navbar-fixed ">
             <div className="container-fluid container">
                 <Link to="/" className="navbar-brand">DevsLab</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,13 +19,13 @@ function Navbar() {
                         <Link to="/" className="nav-link" aria-current="page">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link" aria-current="page">About</Link>
+                        <Link to="/about" className="nav-link" aria-current="page">About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link" aria-current="page">Devs</Link>
+                        <Link to="/devs" className="nav-link" aria-current="page">Devs</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/devs" className="nav-link" aria-current>Contact</Link>
+                        <Link to="/contact" className="nav-link" aria-current>Contact</Link>
                     </li>
 
                     <li className="nav-item">
@@ -35,7 +35,8 @@ function Navbar() {
             </div>
                     <form class="d-flex" role="search">
                         {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> */}
-                        <button class="btn btn-outline-primary" type="submit">Login</button>
+                        <Link to="/login" className="nav-link" aria-current="page"><button class="btn btn-outline-primary" type="submit">Login</button></Link>
+                       
                     </form>
         </div>
         </nav>
