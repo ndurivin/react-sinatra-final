@@ -1,16 +1,13 @@
 import React from 'react'
-// import ReactDOM from 'react-dom/client';
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Hero from './components/Hero';
 import Home from './components/Home';
 import About from './components/About';
 import Devs from './components/Devs';
 import Contact from './components/Contact';
 import Admin from './components/Admin';
 import Login from './components/Login';
-// import Footer from './components/Footer';
 
 
 
@@ -19,8 +16,6 @@ function App() {
       <Router>
         <div>
           <Navbar />
-          {/* <Hero /> */}
-          {/* <Footer /> */}
         </div>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
