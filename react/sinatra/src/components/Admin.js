@@ -1,5 +1,18 @@
 import React from 'react'
 
+
+
+// fetch("http://localhost:9292/games", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     title: "Breath of the Wild",
+//     platform: "Switch",
+//   }),
+// });
+
 function Admin() {
   return (
     <div>

@@ -4,7 +4,6 @@ puts "🌱 Seeding spices..."
 User.create(
     username: "ndurivo",
     password: "@Ndurivo",
-    # last_logged_in: Faker::Time.between(from: DateTime.now - 1, to: DateTime.now),
   )
 
   Developer.create(

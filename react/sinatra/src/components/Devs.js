@@ -1,6 +1,27 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
+
+
+
+// function GameList() {
+//   const [games, setGames] = useState([]);
+
+//   useEffect(() => {
+//     fetch("http://localhost:9292/games")
+//       .then((r) => r.json())
+//       .then((games) => setGames(games));
+//   }, []);
+
+//   return (
+//     <section>
+//       {games.map((game) => (
+//         <GameItem key={game.id} game={game} />
+//       ))}
+//     </section>
+//   );
+// }
+
 function Devs() {
   return (
     <div>
