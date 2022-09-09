@@ -4,19 +4,20 @@ import React from 'react'
 
 
 // HANDLING A GET REQUEST
-// function GameList() {
-//   const [games, setGames] = useState([]);
+
+// // function DevsList() {
+//   const [devs, setDevs] = useState([]);
 
 //   useEffect(() => {
-//     fetch("http://localhost:9292/games")
-//       .then((r) => r.json())
-//       .then((games) => setGames(games));
+//     fetch("http://localhost:9292/developers")
+//       .then((res) => res.json())
+//       .then((games) => setDevs(games));
 //   }, []);
 
 //   return (
 //     <section>
-//       {games.map((game) => (
-//         <GameItem key={game.id} game={game} />
+//       {devs.map((dev) => (
+//         <DevItem key={dev.id} game={dev} />
 //       ))}
 //     </section>
 //   );
@@ -24,9 +25,11 @@ import React from 'react'
 
 
 //HANDLING OF A POST REQUEST
-// function ReviewForm({ userId, gameId, onAddReview }) {
-//   const [comment, setComment] = useState("");
-//   const [score, setScore] = useState("0");
+
+// function ReviewForm({ userId, developerId, onAddReview }) {
+//   const [title, setTitle] = useState("");
+//   const [description, setDescription] = useState("");
+//   const [rating, setRating] = useState("0");
 
 //   function handleSubmit(e) {
 //     e.preventDefault();
@@ -36,13 +39,15 @@ import React from 'react'
 //         "Content-Type": "application/json",
 //       },
 //       body: JSON.stringify({
-//         comment: comment,
-//         score: score,
+//         review_title: review_title,
+//         review_desc: review_desc,
+//         rating: rating,
 //         user_id: userId,
-//         game_id: gameId,
+//         developer_id: developerId,
+
 //       }),
 //     })
-//       .then((r) => r.json())
+//       .then((res) => res.json())
 //       .then((newReview) => onAddReview(newReview));
 //   }
 
@@ -63,17 +68,17 @@ import React from 'react'
 //         "Content-Type": "application/json",
 //       },
 //       body: JSON.stringify({
-//         comment: comment,
-//         score: score,
+//         review_title: review_title,
+//         review_desc: review_desc,
+//         rating: rating,
 //       }),
 //     })
-//       .then((r) => r.json())
+//       .then((res) => res.json())
 //       .then((updatedReview) => onUpdateReview(updatedReview));
 //   }
 
 //   return <form onSubmit={handleSubmit}>{/* controlled form code here*/}</form>;
 // }
-
 
 
 //HANDLING OF DELETE REQUEST
@@ -82,18 +87,21 @@ import React from 'react'
 //     fetch(`http://localhost:9292/reviews/${review.id}`, {
 //       method: "DELETE",
 //     })
-//       .then((r) => r.json())
+//       .then((res) => res.json())
 //       .then((deletedReview) => onDeleteReview(deletedReview));
 //   }
 
 //   return (
 //     <div>
-//       <p>Score: {review.score}</p>
-//       <p>{review.comment}</p>
+//       <p>title: {review.review_title}</p>
+//       <p>desc: {review.review_desc}</p>
+//       <p>{review.rating}</p>
 //       <button onClick={handleDeleteClick}>Delete Review</button>
 //     </div>
 //   );
 // }
+
+
 
 function Admin() {
   return (
