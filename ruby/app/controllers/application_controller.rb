@@ -26,8 +26,8 @@ class ApplicationController < Sinatra::Base
 
   #get individual item
   get "/developers/:id" do
-    developers = Developer.find(params[:id]) 
-    developers.to_json
+    developer = Developer.find(params[:id]) 
+    developer.to_json
   end
 
   get "/users/:id" do
@@ -44,9 +44,20 @@ class ApplicationController < Sinatra::Base
     category.to_json
   end
 
-  # post requests
+  #delete a review item
+  delete "/reviews/:id" do
+    review = Review.find(params[:id]) 
+    review.destroy
+    review.to_json
+  end
 
-  # 
+  # post requests
+  #create a review item
+  post "/reviews/:id" do
+    review = Review.find(params[:id]) 
+    review.destroy
+    review.to_json
+  end
 
 
 end
