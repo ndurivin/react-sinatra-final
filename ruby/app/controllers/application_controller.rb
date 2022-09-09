@@ -39,29 +39,35 @@ class ApplicationController < Sinatra::Base
     review = Review.find(params[:id]) 
     review.to_json
   end
+
   get "/categories/:id" do
     category = Category.find(params[:id]) 
     category.to_json
   end
 
   #create (post) a new review item
-  post "/reviews/:id" do
-    review = Review.find(params[:id]) 
-    review.destroy
+  post '/reviews' do
+    review = Review.create(
+      review_title: params[:review_title],
+      review_desc: params[:review_desc],
+      rating: params[:rating],
+      user_id: params[:user_id],
+      developer_id: params[:developer_id]
+    )
     review.to_json
   end
-
 
   #update (patch) a new review item
   patch '/reviews/:id' do
     review = Review.find(params[:id])
     review.update(
       review_title: params[:review_title],
-      review_desc: params[:review_desc]
+      review_desc: params[:review_desc],
       rating: params[:rating]
     )
     review.to_json
   end
+
 
    #delete a review item
    delete "/reviews/:id" do
@@ -69,8 +75,5 @@ class ApplicationController < Sinatra::Base
     review.destroy
     review.to_json
   end
-
-
-
 
 end
