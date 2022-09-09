@@ -9,20 +9,14 @@ function Login() {
       </div>
       <form>
         <div className="mb-4">
-          <label for="exampleInputEmail1" className="form-label">Email address</label>
-          <input style={{width: 200}} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-          {/* <div id="emailHelp" className="form-text">Your email is safe with us.</div> */}
+          <input style={{width: 250}} type="email" className="form-control" id="exampleInputEmail1" placeholder="Email"/>
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">Password</label>
-          <input type="password" className="form-control" id="exampleInputPassword1"/>
+          <input type="password" style={{width: 250}} className="form-control" id="exampleInputPassword1" placeholder="Password"/>
         </div>
-        {/* <div className="mb-3 form-check">
-          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-          <label className="form-check-label" for="exampleCheck1">Check me out</label>
-        </div> */}
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="button" style={{width: 80}} className="btn btn-primary btn-sm">Login</button> 
       </form>
+
     </div>
   );
 }
