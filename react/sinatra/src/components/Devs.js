@@ -47,9 +47,9 @@ function Devs() {
           </div>
         </div>
       </div> <br/>
-      <button type="button" className="btn btn-primary btn-sm">Small button</button>
-      <button type="button" className="btn btn-secondary btn-sm">Small button</button>
-      <button type="button" className="btn btn-secondary btn-sm">Small button</button>
+      <button type="button" style={{marginRight: 20, width: 60}} className="btn btn-success btn-sm">Edit</button> 
+      {/* <button type="button" className="btn btn-secondary btn-sm">Small button</button> */}
+      <button type="button" style={{width: 60}} className="btn btn-danger btn-sm">Delete</button>
 
       <h3 className="navbar-text col-md-12 col-sm-12 col-xs-12 text p-3">
         Fullstack Developers</h3>
