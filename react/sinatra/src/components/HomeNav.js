@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Navbar() {
+function HomeNav() {
   return (
     <div>
         <nav className="navbar fixed-top  navbar-expand-lg navbar-text col-md-12 col-sm-12 col-xs-12 text-bg-info p-3">
@@ -21,27 +21,20 @@ function Navbar() {
                     <li className="nav-item">
                         <Link to="/about" className="nav-link" aria-current="page">About</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link to="/devs" className="nav-link" aria-current="page">Devs</Link>
-                    </li>
-                    <li className="nav-item">
+                     <li className="nav-item">
                         <Link to="/contact" className="nav-link" aria-current>Contact</Link>
-                    </li>
-
-                    <li className="nav-item">
-                        <Link to="/admin" className="nav-link active" aria-current>Admin</Link>
                     </li>
                     </ul>
             </div>
-                    <form class="d-flex" role="search">
-                        {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> */}
-                        <Link to="/login" className="nav-link" aria-current="page"><button class="btn btn-outline-primary" type="submit">Login</button></Link>
+                    <form class="d-flex">
+                       <Link to="/login" className="nav-link" aria-current="page"><button class="btn btn-outline-primary" type="submit">Login</button></Link>
                        
                     </form>
         </div>
         </nav>
+      
     </div>
   )
 }
 
-export default Navbar;
+export default HomeNav;
