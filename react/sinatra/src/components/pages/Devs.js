@@ -5,23 +5,25 @@ import Footer from '../Footer'
 
 
 
-// function DevsList() {
-//   const [devs, setDevs] = useState([]);
 
-//   useEffect(() => {
-//     fetch("http://localhost:9292/developers")
-//       .then((res) => res.json())
-//       .then((devs) => setDevs(devs));
-//   }, []);
+function getDevs() {
 
-//   return (
-//     <section>
-//       {devs.map((dev) => (
-//         <DevItem key={dev.id} game={dev} />
-//       ))}
-//     </section>
-//   );
-// }
+  const [devs, setDevs] = useState([]);
+
+  useEffect(() => {
+    fetch("https://quiet-hamlet-90428.herokuapp.com/devs")
+      .then((res) => res.json())
+      .then((devs) => setDevs(devs));
+  }, []);
+
+  return (
+    <section>
+      {devs.map((dev) => (
+        <devItem key={dev.id} devItem={dev} />
+      ))}
+    </section>
+  );
+}
 
 
 function Devs() {
@@ -37,12 +39,12 @@ function Devs() {
           <div className="card h-100 shadow ">
             <img src="..." className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Developer Name</h5>
+              <h5 className="card-title">{dev.name}</h5>
               <p className="card-text">Languages</p>
               <p className="card-text">Experience</p>
               <p className="card-text">Category</p>
               <p className="card-text">Rating</p>
-            <Link to="/about" className="btn btn-primary">View Developer</Link>
+            <Link to="/profile" className="btn btn-primary">View Developer</Link>
             </div>
           </div>
         </div>
