@@ -17,7 +17,7 @@ function Developers() {
 
   return (
     <div className="container py-5">
-        
+     <center>  
       <h3>View Available Developers Here</h3>
       <div className="row row-cols-1 row-cols-md-4 py-3">
       {devs.map((dev)=> (  
@@ -27,12 +27,13 @@ function Developers() {
             <div className="card-body ">
               <h5 className="card-title">{dev.name}</h5>
               <p className="card-text">{dev.language_id}</p>
-              <p className="card-text">{dev.experience}</p>
+              <p className="card-text">Experience: {dev.experience} yrs</p>
               <Link to={"/Profile"} class="btn btn-primary">View Details</Link>
             </div>
           </div> 
         </div> ))}
       </div>
+      </center> 
     </div>
   );
 }

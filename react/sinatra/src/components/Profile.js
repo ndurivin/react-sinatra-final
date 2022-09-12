@@ -1,11 +1,13 @@
 import React from 'react'
+import Developers from './Developers';
 
 function Profile() {
   return (
     <div className='container py-5'>
       <center>
       <h3>View Profile Here</h3>
-      <div className="card mb-3 py-4" style= {{maxWidth: "540px"}}>
+      <Developers />
+      {/* <div className="card mb-3 py-4" style= {{maxWidth: "540px"}}>
       <div className="row no-gutters">
         <div className="col-md-4">
           <img src="..." className="card-img" alt="..."/>
@@ -17,7 +19,7 @@ function Profile() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
       </center>
     </div>
   )
