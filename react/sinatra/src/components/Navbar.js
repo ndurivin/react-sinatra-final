@@ -3,37 +3,32 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div>
-        <nav className="navbar fixed-top  navbar-expand-lg navbar-text col-md-12 col-sm-12 col-xs-12 text-bg-info p-3">
-            <div className="container-fluid container">
-                <Link to="/" className="navbar-brand">DevsLab</Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    
-                    </ul>
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                        <Link to="/" className="nav-link" aria-current="page">Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/about" className="nav-link" aria-current="page">About</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/developers" className="nav-link" aria-current="page">Developers</Link>
-                    </li>
-                    </ul>
+    <div >
+      <nav className="navbar navbar-expand-lg bg-primary">
+        <div className="container" >
+            <Link className="navbar-brand" style={{color: 'white'}} to="/">DevsLab</Link>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav justify-content-center">
+                <li className="nav-item">
+                    <Link className="nav-link active" style={{color: 'white'}} aria-current="page" to="/">Home</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" style={{color: 'white'}} aria-current="page" to="/about">About</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" style={{color: 'white'}} aria-current="page" to="/developers">Developers</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" style={{color: 'white'}} aria-current="page" to="/contact">Contact</Link>
+                </li>
+                </ul>
             </div>
-                    <form class="d-flex">
-                        <Link to="/contact" className="nav-link" aria-current="page"><button class="btn btn-outline-primary" type="submit">Contact</button></Link>
-                       
-                    </form>
         </div>
-        </nav>
+      </nav>
     </div>
-  )
+  );
 }
 
 export default Navbar;
