@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# DevsLab Web Application
+## By  Vincent Nduri 
 
-In the project directory, you can run:
+## Screenshot
 
-### `npm start`
+ ![Landing page picture]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ ## Table of Content
+ - [Description](#description)
+ - [Features](#features)
+ - [Requirements](#requirements)
+ - [Installation Process](#installation-Process)
+ - [Live Link](#Live-Link)
+ - [Technology  Used](#technology-Used)
+ - [License](#license)
+ - [Author Info](#Author-Info)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Description
+<p>DevsLab is a web application for people seeking for software developers. The platform will help individuals get their desired developers depending on the particular development experience in years or technology stack, ratings and reviews. </p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+1. A user can view the list of available developers.
+2. A user can click on an individual developer to view the profile details on experience and areas of expertise.
+3. A user can filter the developers depending on the category e.g. Android Developers, Backend Developers etc.
+4. A user can view, create, update, and delete review(s) to a particular developer(s).
 
-### `npm run build`
+ ###  Requirements
+ * Access to  a computer or any other garget
+ * Access to internet
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ### Installation Process
+ ****
+* Clone to the repo : git clone: git@github.com:ndurivin/react-sinatra-final.git
+* Unzip the downloaded files in a folder of choice.
+* Open the files in a code editor of choice and cd into the react/sinatra directory in the terminal run 'npm start' to have the application load in your default brouser.
+* cd to ruby directory and run 'bundle exec rake server'in the terminal to get the server running then open port "http://localhost:9292".
+ ****
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Live Link
+- Click this link to view the live application: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Technology  Used
+* HTML - which was used to develope the structure off the pages.
+* CSS - which was used to add style to the application.
+* BOOTSTRAP -  used in creating the mobile-first-view responsiveness
+* JAVASCRIPT - which was used for writing manipulation scripts and app interactivity in react.
+* REACT JS LIBRARY - used in building the user interface.
+* SINATRA (RUBY) - Used on the Backened for creation of the API with the use of Active Records.
 
-### `npm run eject`
+## Known Bugs
+* There were no known bugs in developing the application as the possible challenges were addressed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
+MIT License
+Copyright (c) [2022] [License](LICENSE.txt)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author Info
+Contributor -
+[Vincent Nduri](https://github.com/ndurivin)
+## Twitter: https://twitter.com/vinnduri
+## LinkedIn: https://www.linkedin.com/in/vincent-nduri-8b2228b5/

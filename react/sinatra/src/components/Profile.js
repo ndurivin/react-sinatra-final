@@ -2,15 +2,6 @@ import React from 'react'
 
 
 
-
-const addReview = () => {
-
-    // const [title, setTitle] = useState('')
-    // const [desc, setDesc] = useState('')
-    // const [rating, setRating] = useState('')
-
-}
-
 function Profile() {
   return (
     <div className="container" style={{margin: '4rem auto'}}>
@@ -22,11 +13,11 @@ function Profile() {
       </div>
       <div className="col-md-8">
       <div className="card-body">
-      <h5 className="card-title">Developer Name</h5>
-      <p className="card-text">Languages</p>
-      <p className="card-text">Experience</p>
-      <p className="card-text">Category</p>
-      <p className="card-text">Rating</p>
+          <h5 className="card-title">Developer Name</h5>
+          <p className="card-text">Languages</p>
+          <p className="card-text">Experience</p>
+          <p className="card-text">Category</p>
+          <p className="card-text">Rating</p>
       </div>
     </div>
   </div>
@@ -45,7 +36,7 @@ function Profile() {
       <input type="number" className="form-control" style={{width: 150}} id="exampleFormControlInput1" min={1} max={10} placeholder="Rating"/>
       {/* onChange={(e)=> setRating(e.target.value)} */}
     </div>
-    <button type="button" style={{marginRight: 20, width: 60}} className="btn btn-primary btn-sm" onClick={addReview}>ADD</button> 
+    <button type="button" style={{marginRight: 20, width: 60}} className="btn btn-primary btn-sm">ADD</button> 
 
 
     {/* <button type="button" style={{marginRight: 20, width: 60}} className="btn btn-success btn-sm">EDIT</button>  */}

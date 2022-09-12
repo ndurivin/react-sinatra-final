@@ -22,12 +22,11 @@ function Navbar() {
                         <Link to="/about" className="nav-link" aria-current="page">About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/devs" className="nav-link" aria-current="page">Devs</Link>
+                        <Link to="/developers" className="nav-link" aria-current="page">Developers</Link>
                     </li>
                     </ul>
             </div>
-                    <form class="d-flex" role="search">
-                        {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> */}
+                    <form class="d-flex">
                         <Link to="/contact" className="nav-link" aria-current="page"><button class="btn btn-outline-primary" type="submit">Contact</button></Link>
                        
                     </form>
