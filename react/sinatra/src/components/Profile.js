@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 
 
@@ -13,8 +13,9 @@ const addReview = () => {
 
 function Profile() {
   return (
-    <div>
-      <div className="card mb-3" style={{maxWidth: 540}}>
+    <div className="container" style={{margin: '4rem auto'}}>
+      <br />
+      <div className="card mb-3" style={{maxWidth: 600}}>
       <div className="row g-0">
       <div className="col-md-4">
         <img src="..." className="img-fluid rounded-start" alt="..."/>
@@ -31,18 +32,18 @@ function Profile() {
   </div>
 </div>
     <form>
-    <div className="mb-3">
+    <div className="container mb-3">
       <label for="exampleFormControlInput1" className="form-label"></label>
-      <input type="text" class="form-control" style={{width: 300}} id="exampleFormControlInput1" placeholder="Review Title"
-       onChange={(e)=> setTitle(e.target.value)}/>
+      <input type="text" class="form-control" style={{width: 300}} id="exampleFormControlInput1" placeholder="Review Title"/>
+       {/* onChange={(e)=> setTitle(e.target.value)} */}
     </div>
     <div className="mb-3">
-      <textarea className="form-control" style={{width: 300}} id="exampleFormControlTextarea1" placeholder="Review Title"
-       onChange={(e)=> setDesc(e.target.value)} rows="3"></textarea>
+      <textarea className="form-control" style={{width: 300}} id="exampleFormControlTextarea1" placeholder="Review Details" rows="3"></textarea>
+      {/* onChange={(e)=> setDesc(e.target.value)}  */}
     </div>
     <div class="mb-3">
-      <input type="number" className="form-control" style={{width: 150}} id="exampleFormControlInput1" min={1} max={10} placeholder="Rating"
-       onChange={(e)=> setRating(e.target.value)}/>
+      <input type="number" className="form-control" style={{width: 150}} id="exampleFormControlInput1" min={1} max={10} placeholder="Rating"/>
+      {/* onChange={(e)=> setRating(e.target.value)} */}
     </div>
     <button type="button" style={{marginRight: 20, width: 60}} className="btn btn-primary btn-sm" onClick={addReview}>ADD</button> 
 

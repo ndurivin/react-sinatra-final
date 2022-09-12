@@ -3,7 +3,7 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   #get requests
-  #get all lists
+#get all lists
   get "/developers" do
     developers = Developer.all 
     developers.to_json
@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
     categories.to_json
   end
 
-  #get individual item
+#get individual items
   get "/developers/:id" do
     developer = Developer.find(params[:id]) 
     developer.to_json
@@ -45,7 +45,21 @@ class ApplicationController < Sinatra::Base
     category.to_json
   end
 
-  #create (post) a new review item
+#create a new developer item
+  post '/developers' do
+    developer = Developer.create(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      image_url: params[:image_url],
+      experience: params[:experience],
+      language_1: params[:language_1],
+      language_2: params[:language_2],
+      category_id: params[:category_id]
+    )
+    developer.to_json
+  end
+
+#create a new review item
   post '/reviews' do
     review = Review.create(
       review_title: params[:review_title],
@@ -57,7 +71,7 @@ class ApplicationController < Sinatra::Base
     review.to_json
   end
 
-  #update (patch) a new review item
+#update (patch) a new review item
   patch '/reviews/:id' do
     review = Review.find(params[:id])
     review.update(
@@ -68,8 +82,7 @@ class ApplicationController < Sinatra::Base
     review.to_json
   end
 
-
-   #delete a review item
+#delete a review item
    delete "/reviews/:id" do
     review = Review.find(params[:id]) 
     review.destroy

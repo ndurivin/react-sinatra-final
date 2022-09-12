@@ -24,18 +24,11 @@ function Navbar() {
                     <li className="nav-item">
                         <Link to="/devs" className="nav-link" aria-current="page">Devs</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link to="/contact" className="nav-link" aria-current>Contact</Link>
-                    </li>
-
-                    <li className="nav-item">
-                        <Link to="/admin" className="nav-link active" aria-current>Admin</Link>
-                    </li>
                     </ul>
             </div>
                     <form class="d-flex" role="search">
                         {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> */}
-                        <Link to="/login" className="nav-link" aria-current="page"><button class="btn btn-outline-primary" type="submit">Login</button></Link>
+                        <Link to="/contact" className="nav-link" aria-current="page"><button class="btn btn-outline-primary" type="submit">Contact</button></Link>
                        
                     </form>
         </div>
