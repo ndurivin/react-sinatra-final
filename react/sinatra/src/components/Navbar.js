@@ -12,16 +12,16 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav justify-content-center">
                 <li className="nav-item">
-                    <Link className="nav-link active" style={{color: 'white'}} aria-current="page" to="/">Home</Link>
+                    <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" style={{color: 'white'}} aria-current="page" to="/about">About</Link>
+                    <Link className="nav-link active"aria-current="page" to="/about">About</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" style={{color: 'white'}} aria-current="page" to="/developers">Developers</Link>
+                    <Link className="nav-link active"  aria-current="page" to="/developers">Developers</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" style={{color: 'white'}} aria-current="page" to="/contact">Contact</Link>
+                    <Link className="nav-link active" aria-current="page" to="/contact">Contact</Link>
                 </li>
                 </ul>
             </div>

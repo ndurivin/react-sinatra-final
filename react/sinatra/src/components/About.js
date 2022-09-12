@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div>
+    <div className='container py-5'>
       <h3>This is the About Us Page</h3>
     </div>
   )
