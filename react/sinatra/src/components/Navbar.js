@@ -3,10 +3,10 @@ import { Link, NavLink} from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div>
+    <div className="py-4 ">
       
-      <nav className="navbar navbar-expand-lg bg-primary">
-        <div className="container ">
+      <nav className="navbar fixed-top navbar-expand-lg bg-primary ">
+        <div className="container">
             <Link className="navbar-brand" style={{color: 'white'}} to="/">DevsLab</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
