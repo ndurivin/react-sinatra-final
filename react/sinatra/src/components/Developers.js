@@ -31,7 +31,7 @@ function Developers({id}) {
               <h5 className="card-title">{dev.name}</h5>
               <p className="card-text">{dev.language_id}</p>
               <p className="card-text">Experience: {dev.experience} yrs</p>
-              <Link to={"/developer/" + id} className="btn btn-info text-center">View Developer Details</Link>
+              <Link to={`/developers/${id}`} className="btn btn-info text-center">View Developer Details</Link>
             </div>
           </div> 
         </div> ))}
