@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react'
+import ReviewForm from './ReviewForm';
 // import axios from 'axios';
 
 function Profile() {
@@ -36,13 +37,15 @@ function Profile() {
             <img src={image} className="card-img-top" alt={name}/>
             <div className="card-body ">
               <h5 className="card-title">{name}</h5>
-              <p className="card-text">{language}</p>
+              <h6 className="card-title">{language}</h6>
               <p className="card-text">Experience: {experience} yrs</p>
             </div>
           </div> 
         </div> 
       </div>
-
+        <div>
+        <ReviewForm />
+        </div>
       </center> 
     </div>
   );
