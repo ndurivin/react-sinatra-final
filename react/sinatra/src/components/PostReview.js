@@ -7,7 +7,6 @@ function PostReview() {
     const [inputs, setInputs] = useState({});
 
 // Post data function
-
 const postData = () => {
 
   fetch(url, {
@@ -25,7 +24,27 @@ const postData = () => {
   .then((json)=> console.log(json));
 };
 
+//Update data function using PUT
+const updateData = () => {
 
+  fetch("https://quiet-hamlet-90428.herokuapp.com/devs/:id", {
+
+    method: "PUT",
+    body: JSON.stringify({
+      title: inputs.title,
+      body: inputs.desc,
+      rating: parseInt(inputs.rating)
+    }),
+    headers: {
+      "Content-Type": "applicattion/json; characterset-UTF-8",
+    },
+  })
+  .then((res)=> res.json())
+  .then((json)=> console.log(json));
+};
+
+
+//Handle change functionon the input data
     const handleChange=(event) => {
       event.persist();
       setInputs((input)=> ({
