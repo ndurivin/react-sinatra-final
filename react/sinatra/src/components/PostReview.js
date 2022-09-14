@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from "react-router-dom";
+// import { useLocation } from 'react-router-dom';
 
 
 
@@ -7,8 +7,7 @@ function PostReview() {
 
     const url = "http://localhost:9292/reviews"
 
-    const { id } = useParams();
-
+   
     const [inputs, setInputs] = useState({});
     const [data, setData] = useState([])
 
@@ -32,8 +31,8 @@ const postData = () => {
   fetch(url, {
     method: "POST",
     body: JSON.stringify({
-      title: inputs.title,
-      body: inputs.desc,
+      review_title: inputs.title,
+      review_desc: inputs.desc,
       rating: parseInt(inputs.rating)
     }),
     headers: {
@@ -46,7 +45,7 @@ const postData = () => {
 
 //Update data function using PUT
 const updateData = () => {
-  fetch("http://localhost:9292/reviews", {
+  fetch(`http://localhost:9292/reviews/5`, {
 
     method: "PUT",
     body: JSON.stringify({
