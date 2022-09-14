@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 function PostReview() {
 
-    const url = "https://quiet-hamlet-90428.herokuapp.com/devs"
+    const url = "http://localhost:9292/reviews"
 
     const { id } = useParams();
 
@@ -46,7 +46,7 @@ const postData = () => {
 
 //Update data function using PUT
 const updateData = () => {
-  fetch("https://quiet-hamlet-90428.herokuapp.com/devs", {
+  fetch("http://localhost:9292/reviews", {
 
     method: "PUT",
     body: JSON.stringify({
@@ -65,7 +65,7 @@ const updateData = () => {
 
 //Deleting data function 
 const deleteData = () => {
-  fetch(`https://quiet-hamlet-90428.herokuapp.com/devs`, {
+  fetch(`http://localhost:9292/reviews`, {
 
     method: "DELETE"
     
@@ -94,10 +94,10 @@ const deleteData = () => {
     <div>
       <form>
       <div className="mb-3">
-        <input type="text" onChange={handleChange} name="title" placeholder='Review Title'></input>
+        <input type="text" onChange={handleChange} name="review_title" placeholder='Review Title'></input>
         </div>
         <div className="mb-3">
-        <input type="text" onChange={handleChange}  name="desc" placeholder='Review Description' row={2}></input>
+        <input type="text" onChange={handleChange}  name="review_desc" placeholder='Review Description' row={2}></input>
         </div>
         <div className="mb-3">
         <input type="number" onChange={handleChange}  name="rating" placeholder='Rating' min={1} max={10}></input>

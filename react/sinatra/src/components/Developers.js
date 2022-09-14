@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Axios from "axios";
 
 function Developers() {
-    const url = "https://quiet-hamlet-90428.herokuapp.com/devs";
+    const url = "http://localhost:9292/developers";
 
 
 //Getting Developers Data
@@ -28,7 +28,7 @@ function Developers() {
       {devs.map((dev, index)=> (  
         <div key={index} className="col mb-4">
           <div className="card text-center h-100 shadow">  
-            <img src={dev.image} className="card-img-top" alt={dev.name}/>
+            <img src={dev.image_url} className="card-img-top" alt={dev.name}/>
             <div className="card-body ">
               <h5 className="card-title">{dev.name}</h5>
               <p className="card-text">{dev.language_id}</p>
@@ -38,16 +38,6 @@ function Developers() {
           </div> 
         </div> ))}
       </div>
-      <h3>Give Reviews</h3>
-        <br/>
-        <div className="card text-center h-100 mb-3" style={{width: 400}}> 
-        <div className="card-body py-4 ">
-              <h5 className="card-title">Title: {}</h5>
-              <p className="card-text">Language: {}</p>
-              <p className="card-text">Rating: {}</p>
-        </div>
-        </div>
-
       </center> 
     </div>
   );

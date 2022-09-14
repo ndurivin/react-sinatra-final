@@ -5,7 +5,7 @@
 
 ## Screenshot
 
- ![Landing page picture]()
+ ![Landing page picture](./public/images/home.png)
 
  ## Table of Content
  - [Description](#description)

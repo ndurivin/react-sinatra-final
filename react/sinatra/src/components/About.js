@@ -20,8 +20,6 @@ function About() {
           choice of your favorite developer.
         </p>
       </div>
-
-      {/* https://us.123rf.com/450wm/ra2studio/ra2studio2005/ra2studio200501945/147705114-waiter-serving-social-networking-concept-with-about-us-inscription.jpg?ver=6 */}
     </div>
   );
 }
