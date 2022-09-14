@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from "react-router-dom";
 
 
 
 function PostReview() {
 
     const url = "https://quiet-hamlet-90428.herokuapp.com/devs"
+
+    const { id } = useParams();
+
     const [inputs, setInputs] = useState({});
     const [data, setData] = useState([])
 
@@ -42,7 +46,7 @@ const postData = () => {
 
 //Update data function using PUT
 const updateData = () => {
-  fetch("https://quiet-hamlet-90428.herokuapp.com/devs/:id", {
+  fetch("https://quiet-hamlet-90428.herokuapp.com/devs", {
 
     method: "PUT",
     body: JSON.stringify({
@@ -61,7 +65,7 @@ const updateData = () => {
 
 //Deleting data function 
 const deleteData = () => {
-  fetch("https://quiet-hamlet-90428.herokuapp.com/devs/:id", {
+  fetch(`https://quiet-hamlet-90428.herokuapp.com/devs`, {
 
     method: "DELETE"
     
@@ -103,10 +107,9 @@ const deleteData = () => {
         <button onClick={deleteData} type="button" className="btn btn-danger btn-sm">Delete</button>
       </form>
       <div>
-        {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
         <div className="row-cols-md-4 py-2">
       {data.map((dev)=> (  
-        <div className="col mb-4">
+        <div key={dev.id} className="col mb-4">
           <div className="card text-center h-100 shadow">
             <div className="card-body ">
               <h5 className="card-title">{data.title}</h5>
