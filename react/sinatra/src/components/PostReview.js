@@ -44,6 +44,16 @@ const updateData = () => {
 };
 
 
+//Deleting data function 
+const deleteData = () => {
+
+  fetch("https://quiet-hamlet-90428.herokuapp.com/devs/:id", {
+
+    method: "DELETE"
+    
+    })
+    
+
 //Handle change functionon the input data
     const handleChange=(event) => {
       event.persist();
