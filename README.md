@@ -51,7 +51,7 @@
 * SINATRA (RUBY) - Used on the Backened for creation of the API with the use of Active Records.
 
 ## Known Bugs
-* There were no known bugs in developing the application as the possible challenges were addressed.
+* The major bug was in retrieving data from the other relational tables.
 
 ## License
 MIT License
