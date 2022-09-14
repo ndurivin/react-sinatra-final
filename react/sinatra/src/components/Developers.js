@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Axios from "axios";
 
 function Developers({id}) {
     const url = "https://quiet-hamlet-90428.herokuapp.com/devs";
+
+    const {}
 
 //Getting Developers Data
     const [devs, setDevs] = useState([]);
@@ -23,8 +26,8 @@ function Developers({id}) {
      <center>  
       <h3>View Available Developers Here</h3>
       <div className="row row-cols-1 row-cols-md-4 py-3">
-      {devs.map((dev)=> (  
-        <div className="col mb-4">
+      {devs.map((dev, index)=> (  
+        <div key={index} className="col mb-4">
           <div className="card text-center h-100 shadow">  
             <img src={dev.image} className="card-img-top" alt={dev.name}/>
             <div className="card-body ">

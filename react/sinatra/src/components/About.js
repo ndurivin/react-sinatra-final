@@ -3,31 +3,24 @@ import React from "react";
 function About() {
   return (
     <div className="container py-5">
-      <center>
-        <h3>This is About Us page</h3>
-        <div class="col-sm-6 col-md-6 col-xs-6">
-        <div className="thumbnail">
-          <div className="col-sm-6 col-md-6 col-xs-12 image-container">
-            <img
-              src="https://i.pinimg.com/474x/35/5f/e8/355fe8a95a65ad5804e6ab74f53d2956.jpg"
-              style={{ height: 200, marginLeft: -15 }}
-              alt=""
-            />
-          </div>
+        <h3>
+          About <span style={{fontSize: 40, color: 'blue'}}>GITLAB</span>
+        </h3>
+      <div className="clearfix py-4">
+        <img style={{borderRadius: 16}}
+          src="https://us.123rf.com/450wm/ra2studio/ra2studio2005/ra2studio200501945/147705114-waiter-serving-social-networking-concept-with-about-us-inscription.jpg?ver=6"
+          className="col-md-6 float-md-end mb-3 ms-md-3"
+          alt="..." />
 
-          <div className="col-sm-6 col-md-6 col-xs-12">
-            <h3>Hello World</h3>
-            <p style={{ fontSize: 13 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum
-              fermentum, mi felis vehicula justo, a dapibus quam augue non
-              massa.
-            </p>
-          </div>
-        </div>
+        <p style={{marginTop: 80, fontSize: 26}}>
+        <span style={{fontSize: 40, color: 'blue'}}>GITLAB</span> is a web based application for Software Developers. 
+        </p>
+        <p style={{fontSize: 26}}>
+          We have various developers with varied technology stacks and levels of experiences.Check our developers page for more information and 
+          choice of your favorite developer.
+        </p>
       </div>
-      </center>
-      
+
       {/* https://us.123rf.com/450wm/ra2studio/ra2studio2005/ra2studio200501945/147705114-waiter-serving-social-networking-concept-with-about-us-inscription.jpg?ver=6 */}
     </div>
   );

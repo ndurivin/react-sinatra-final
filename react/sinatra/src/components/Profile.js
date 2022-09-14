@@ -29,11 +29,11 @@ function Profile() {
           }, [id]);
 
   return (
-    
+
     <div className="container py-5 justify-content-center">
      <center className="justify-content-center">  
       <h3> Developer Profile</h3>
-      <div className="row-cols-md-3 py-2">
+      <div className="row-cols-md-4 py-2">
         <div className="col mb-4">
           <div className="card text-center h-100 shadow">  
             <img src={image} className="card-img-top" alt={name}/>
@@ -55,3 +55,15 @@ function Profile() {
 }
 
 export default Profile;
+
+
+// import {useParams, useNavigate} from 'react-router-dom'
+
+// cost navigate = usrNavigate ()
+
+// const {id} = useParams()
+
+// fetch (`http://blahblah/${id}`, {
+// method: 'DELETE', 
+// }).then (()=>{
+// navigate (/whichever route})
