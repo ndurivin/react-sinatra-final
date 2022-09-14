@@ -1,11 +1,11 @@
 
 
 # DevsLab Web Application
-## By  Vincent Nduri 
+* By  Vincent Nduri 
 
 ## Screenshot
 
- ![Landing page picture](./public/images/home.png)
+ ![Landing page picture](./react/sinatra/public/images/home.png)
 
  ## Table of Content
  - [Description](#description)
@@ -75,5 +75,5 @@ SOFTWARE.
 ## Author Info
 Contributor -
 [Vincent Nduri](https://github.com/ndurivin)
-## Twitter: https://twitter.com/vinnduri
-## LinkedIn: https://www.linkedin.com/in/vincent-nduri-8b2228b5/
+8 Twitter: https://twitter.com/vinnduri
+* LinkedIn: https://www.linkedin.com/in/vincent-nduri-8b2228b5/
