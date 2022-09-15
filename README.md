@@ -5,7 +5,7 @@
 
 ## Screenshot
 
- ![Landing page picture](./react/sinatra/public/images/home.png)
+ ![Landing page picture](./react/sinatra/public/images/main.png)
 
  ## Table of Content
  - [Description](#description)
