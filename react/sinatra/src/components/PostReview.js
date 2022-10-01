@@ -14,7 +14,6 @@ function PostReview() {
 
   const [review_title, setReview_Title] = useState("");
   const [review_desc, setReview_Desc] = useState("");
-  // const [developer_id, setDeveloper_Id] = useState('')
   const [rating, setRating] = useState("");
 
   // Get all data from api function using Axios
@@ -41,14 +40,15 @@ function PostReview() {
       })
       .then((res) => console.log("Posting Review", res))
       .catch((err) => console.log(err));
+      alert("Review succesfully posted!");
   };
 
   //Update data function using PUT
 
   const updateData = (id, e) => {
     // e.preventDefault();
-    // axios.patch(`http://localhost:9292/reviews/${id}`)
-    // .then(res => console.log('Deleted!!', res))
+    // axios.put(`http://localhost:9292/reviews/${id}`)
+    // .then(res => console.log('Data Updated!!', res))
     //   .catch(err => console.log(err))
   };
 
@@ -116,7 +116,7 @@ function PostReview() {
                   <p className="card-text">Rating: {rev.rating}</p>
                 </div>
                 <button
-                  onClick={updateData(rev.id)}
+                  onClick={(e) => updateData(rev.id, e)}
                   type="button"
                   className="btn btn-success btn-sm"
                   style={{ margin: 5 }}

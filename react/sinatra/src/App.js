@@ -8,10 +8,7 @@ import Contact from './components/Contact';
 import Profile from './components/Profile';
 
 
-
-
 function App() {
-
   return (
      <Router>
       <Navbar />

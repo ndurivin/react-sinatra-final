@@ -36,7 +36,7 @@
 * Fork and clone the repo: git clone: git@github.com:ndurivin/react-sinatra-final.git
 * Unzip the downloaded files in a folder of choice.
 * Open the files in a code editor of choice and first cd into the react then to sinatra directories in the terminal and then run 'npm start' to have the application load in your default brouser.
-* "cd.." to react and then "cd.." to main folder from the terminal. Then cd to ruby directory and run 'bundle exec rake server'in the terminal to get the server running then open port "http://localhost:9292" on the default browser.
+* "cd.." to react and then "cd.." to main folder from the terminal. Then cd to ruby directory and run 'bundle exec rake server' in the terminal to get the server running then open port "http://localhost:9292" on the default browser.
  ****
 
 <!-- ### Live Link

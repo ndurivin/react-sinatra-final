@@ -30,7 +30,7 @@ function Developers() {
             <img src={dev.image_url} className="card-img-top" alt={dev.first_name}/>
             <div className="card-body ">
               <h5 className="card-title">{dev.first_name}</h5>
-              {/* <p className="card-text"> {de.experience} yrs</p> */}
+              <p className="card-text"> {dev.developer.category}</p>
               <p className="card-text">Experience: {dev.experience} yrs</p>
               <NavLink to={`/developers/${dev.id}`} state={{dev}} className="btn btn-info text-center">View Developer Details</NavLink>
             </div>

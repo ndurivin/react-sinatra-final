@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
 #get individual items
   get "/developers/:id" do
     developer = Developer.find(params[:id]) 
-    developer.to_json
+    developer.to_json, include: :category
   end
 
   get "/users/:id" do
